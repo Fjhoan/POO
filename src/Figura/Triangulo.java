@@ -8,7 +8,11 @@ public class Triangulo extends Figura{
     private float base;
     private float altura;
     //crear metodo constructor
-    
+        public Triangulo(float area, float base, float altura) {
+        this.area = area;
+        this.base = base;
+        this.altura = altura;
+    }
     //crear los metodos
     public void calcularArea() {
         Scanner Lectura = new Scanner(System.in);
@@ -21,9 +25,5 @@ public class Triangulo extends Figura{
         Lectura.close();
     }
 
-    public Triangulo(float area, float base, float altura) {
-        this.area = area;
-        this.base = base;
-        this.altura = altura;
-    }
+
 }
