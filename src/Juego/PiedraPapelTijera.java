@@ -11,14 +11,14 @@ public class PiedraPapelTijera implements Juego {
 
     Scanner Lectura = new Scanner(System.in);
     Random Random = new Random();
-    public void iniciar(){
+    public void jugar(){
         System.out.println("Bienvenido al juego de piedra, papel o tijera");
         System.out.println("Por favor diganos su nombre");
         nombreJugador = Lectura.next();
         System.out.println("Bienvenido " + nombreJugador);
     }
 
-    public void jugar(){
+    public void iniciar(){
         maquinaNum = Random.nextInt(3) + 1;
         switch(maquinaNum){
             case 1:
